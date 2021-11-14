@@ -71,7 +71,7 @@ export default class Register extends Component{
                             <input type="password" id="password" value={this.state.password} onChange={this.onInputChange} required />
                             <label>Confirm Password</label>
                             <input type="password" id="confirmPassword" required />
-                            <a className='buttons' type="submit" value="Register" onClick={this.onRegister}>I accept the T&Cs</a>
+                            <a className='buttons' href="#" type="submit" value="Register" onClick={this.onRegister}>I accept the T&Cs</a>
                             <Link to="/home" className='buttons' type="submit" value="Register" onClick={this.goToLogin}>Register</Link>
                         </form>
                     </div>
