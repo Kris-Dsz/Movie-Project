@@ -1,0 +1,40 @@
+.about-us-main{
+  background-image: url('./milky-way.jpg');
+  
+  min-height: 100vh;
+}
+.about-us-header {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	padding: 15px;
+	background-color: #3c3c3c;
+	border-bottom: 5px solid rgb(185, 1, 185);
+}
+
+.about-us-header h1 {
+	color: #EEE;
+	font-size: 28px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.about-us-text{
+
+	margin: 15px;
+	padding: 15px;
+	background-color: #FFF;
+	border-radius: 8px;
+
+}
+.about-us-container{
+  margin: 15px;
+  margin-left: 25%;
+  width: 50%;
+  background-color: rgb(206, 0, 206);
+  border-radius: 8px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+

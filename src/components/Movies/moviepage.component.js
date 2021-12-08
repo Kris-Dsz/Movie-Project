@@ -9,8 +9,7 @@ class MoviePage extends Component {
         super();
 
         this.state = {
-            movies: [],
-            isLoggedIn: 'false'
+            movies: []
         }
     }
 
@@ -27,6 +26,7 @@ class MoviePage extends Component {
             if(data){
                 console.log(data);
                 this.setState({movies: data});
+                console.log(this.props.isSignedin);
             }
             else
                 alert("Movies not logged");
@@ -35,13 +35,14 @@ class MoviePage extends Component {
     }
 
     bookWithoutLogin = () => {
-        alert("You need to Sign-in/Register in order to book tickets...");
+        alert("You need to Sign-in/Register in order to book tickets...")
     }
 
     render() {
         console.log(this.state.movies[0]?.title);
+        //console.log("sign status: "+this.state.isLoggedIn);
         return(
-            <div className='body'>
+            <div className='homepage-body'>
                 <div className='collection-details-container'>
                     <div className='image-container'>
                         <img className='image' alt={this.state.movies[0]?.title} src={`${this.state.movies[0]?.poster}`} />
@@ -64,9 +65,9 @@ class MoviePage extends Component {
                         <p><span>Rotten Tomatoes: </span>{this.state.movies[0]?.ratings[1]?.value}</p>
                         <p><span>Metacritic: </span>{this.state.movies[0]?.ratings[2]?.value}</p>
                         {
-                    this.state.isLoggedIn==='true' ?
+                    (this.props.isSignedin) ?
                     (
-                        <Link to={`${this.props.match.url}/${this.state.movies[0]?.title.replace(/ /g, "+")}`}>
+                        <Link to='/timing' style={{ textDecoration: 'none' }}>
                             <div className='book-now'>
                                 <p>BOOK TICKETS</p>
                             </div>
@@ -74,7 +75,7 @@ class MoviePage extends Component {
                     )
                     :
                     (
-                        <Link to='/signin' onClick={this.bookWithoutLogin}>
+                        <Link to='/signin' style={{ textDecoration: 'none' }}onClick={this.bookWithoutLogin}>
                             <div className='book-now'>
                                 <p>BOOK TICKETS</p>
                             </div>
@@ -83,24 +84,6 @@ class MoviePage extends Component {
                 }
                     </div>
                 </div>
-                {/* {
-                    this.state.isLoggedIn==='true' ?
-                    (
-                        <Link to={`${this.props.match.url}/${this.state.movies[0]?.title.replace(/ /g, "+")}`}>
-                            <div className='book-now'>
-                                <span>BOOK TICKETS</span>
-                            </div>
-                        </Link>
-                    )
-                    :
-                    (
-                        <Link to='/signin' onClick={this.bookWithoutLogin}>
-                            <div className='book-now'>
-                                <span>BOOK TICKETS</span>
-                            </div>
-                        </Link>
-                    )
-                } */}
             </div>
         );
     }

@@ -1,7 +1,14 @@
-.body{
-    background-color: black;
+.homepage-body{
+    background: black;
+    min-height: 100vh;
+    padding-left: 60px;
 }
 
+.homepage-title{
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+}
 .collection-item{
     display: inline-block;
     margin: 5%;

@@ -1,0 +1,156 @@
+.booking-body{
+  background-image: url(booking-summary-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.booking-heading{
+  text-align: center;
+  background: black;
+  color: white;
+}
+
+.booking-movie-ticket{
+  margin-left: 36.75%;
+}
+.booking-cardWrap {
+    /* width: 35em; */
+    margin: 0 auto;
+    color: #fff;
+    font-family: sans-serif;
+    height: 8em;
+  }
+  .booking-card {
+    background: linear-gradient(to top, #b993d6, #8ca6db);
+    width: 400px;
+    height: auto;
+    float: left;
+    position: relative;
+    padding: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  .booking-cardLeft {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    width: 100%;
+  }
+  .booking-seats {
+    display: flex;
+  }
+  
+  .booking-seats h2 {
+    margin-right: 0.2em !important;
+  }
+  .cardWrap h1 {
+    font-size: 1.1em;
+    margin-top: 0;
+  }
+  .cardWrap h1 span {
+    font-weight: normal;
+  }
+  .booking-title,
+  .booking-name,
+  .booking-seat,
+  .booking-date,
+  .booking-time, 
+  .booking-food-item,
+  .booking-screen,
+  .booking-price{
+    text-transform: uppercase;
+    font-weight: normal;
+  }
+  .booking-title h2,
+  .booking-name h2,
+  .booking-seat h2,
+  .booking-date h2,
+  .booking-time h2,
+  .booking-food-item h2,
+  .booking-screen h2,
+  .booking-price h2 {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #201742;
+    margin: 0;
+  }
+  .booking-title span,
+  .booking-name span,
+  .booking-seat span,
+  .booking-date span,
+  .booking-time span,
+  .booking-food-item span,
+  .booking-screen span,
+  .booking-price span {
+    font-size: 0.7em;
+    color: white;
+  }
+  .booking-title {
+    margin: 0.6em 0 0 0;
+  }
+  .booking-name {
+    margin: 0.5em 0 0 0;
+  }
+  
+  .booking-date {
+    margin: 0.5em 0 0 0;
+  }
+  
+  .booking-seat {
+    margin: 0.5em 0 0 1em;
+  }
+  .booking-time {
+    margin: 0.5em 0 0 1em;
+  }
+
+  .booking-seat,
+  .booking-date,
+  .booking-time{
+    float: left;
+  }
+  .booking-food-item
+  .booking-screen,
+  .booking-price{
+    clear: both;
+    display: block;
+  }
+ 
+  .booking-barcode {
+    height: 3em;
+    width: 0;
+    margin-left: 32%;
+    justify-content: center;
+    box-shadow: 1px 0 0 1px #343434, 5px 0 0 1px #343434, 10px 0 0 1px #343434,
+      11px 0 0 1px #343434, 15px 0 0 1px #343434, 18px 0 0 1px #343434,
+      22px 0 0 1px #343434, 23px 0 0 1px #343434, 26px 0 0 1px #343434,
+      30px 0 0 1px #343434, 35px 0 0 1px #343434, 37px 0 0 1px #343434,
+      41px 0 0 1px #343434, 44px 0 0 1px #343434, 47px 0 0 1px #343434,
+      51px 0 0 1px #343434, 56px 0 0 1px #343434, 59px 0 0 1px #343434,
+      64px 0 0 1px #343434, 68px 0 0 1px #343434, 72px 0 0 1px #343434,
+      74px 0 0 1px #343434, 77px 0 0 1px #343434, 81px 0 0 1px #343434,
+      84px 0 0 1px #343434, 87px 0 0 1px #343434, 91px 0 0 1px #343434,
+      94px 0 0 1px #343434, 97px 0 0 1px #343434, 100px 0 0 1px #343434,
+      104px 0 0 1px #343434, 107px 0 0 1px #343434, 111px 0 0 1px #343434,
+      115px 0 0 1px #343434, 118px 0 0 1px #343434, 120px 0 0 1px #343434;
+}
+
+.proceed-movie-home {
+  width: 26.45%;
+  height: auto;
+  color: white;
+  font-weight: bold;
+  background: linear-gradient(to bottom, #c33764, #1d2671);
+  display: inline-flex;
+  align-items:center;
+  justify-content: center;
+  margin-left: 36.75%;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  padding: 25px;
+}
+
+.proceed-movie-home:hover {
+  color: white;
+  background: linear-gradient(to top, #da4453, #89216b); 
+
+}

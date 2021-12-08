@@ -1,4 +1,10 @@
+.moviepage-link{
+    text-decoration: none;
+}
 
+.Timings-body{
+    background-color: black;
+}
 .collection-details-container {
     display: inline-flex;
     padding: 30px;
@@ -23,7 +29,8 @@
 }
 
 .collection-details-container .content span {
-    color: #00c3ff;
+    color: #9e90d1;
+    font-weight: bold;
 }
 
 .book-now {
@@ -32,12 +39,15 @@
     font-size: 30px;
     color: white;
     font-weight: bold;
-    background-color: #00c3ff;
+    background-color: #372675;
     display: inline-flex;
     align-items:center;
     justify-content: center;
     transition: background-color 0.75s ease;
 }
+.book-now p{
+    padding-top: 10px;
+}
 .book-now:hover {
-    background-color: #0082aa;
+    background-color: #261a50;
 }

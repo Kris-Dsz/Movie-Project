@@ -1,0 +1,50 @@
+.transaction-main{
+    background: linear-gradient(to right, #780206, #061161);
+    min-height: 100vh;
+}
+
+
+.transaction-history-heading{
+    text-align: center;
+    padding: 10px;
+    background: black;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.transaction-movie-image{
+    float:right;
+    width: 150px;
+    height: 200px;
+    margin-bottom: 15px;
+    margin-right: 30px;
+}
+
+.Transaction-User{
+    border: 2px solid black;
+    margin-bottom: 25px;
+    margin-left: 25%;
+    width: 750px;
+    padding-top: 30px;
+    padding-left: 30px;
+    background: rgb(248, 241, 199);
+}
+
+.transaction-breakdown{
+    border: 1px dashed gray;
+    border-left: 0;
+    border-right: 0;
+    width: 95%;
+    margin: 5px;
+    margin-bottom: 30px;
+}
+
+.transaction-breakdown tr td:first-of-type {
+    font-weight: bold;
+    padding-left: 10px;
+    text-align: left;
+}
+.transaction-breakdown tr td{
+    padding: 5px;
+    text-align: right;
+}

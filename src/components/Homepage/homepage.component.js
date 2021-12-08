@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-//import MoviePreview from './Movies/Moviepreview.component';
 import "./movie-preview.styles.css"
 
 export default class HomePage extends Component {
@@ -23,11 +22,10 @@ export default class HomePage extends Component {
             </div>
             <div className='collection-footer'>
                                 <span className='title'>{title}</span>
-                            </div>
+            </div>
         </Link>
     )
     componentDidMount(){
-        this.props.loadTitle("");
         fetch('http://localhost:3000/get_movie', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'}
@@ -47,9 +45,9 @@ export default class HomePage extends Component {
         console.log(this.state.movies[0]);
         console.log(this.props.user);
         return (
-            <div className='body'>
+            <div className='homepage-body'>
+                <h2 className="homepage-title">LATEST MOVIES</h2>
                 {this.state.movies.map(({title,poster}) => this.MoviePreview({title,poster}))}
-                {/* {this.state.movies.map(({title,...otherCollectionProps}) =><MoviePreview key={title} title={title} {...otherCollectionProps} />)} */}
             </div>
         )
     }

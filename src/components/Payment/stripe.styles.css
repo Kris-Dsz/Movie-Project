@@ -1,0 +1,52 @@
+.FormGroup {
+	padding: 0;
+	border-style: none;
+    width: 100%;
+	background-color: #fff0f5;
+	will-change: opacity, transform;
+	box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08), inset 0 1px 0 #fff0f5;
+	border-radius: 4px;
+}
+
+.FormRow {
+	display: flex;
+	 align-items: center;
+	border-top: 1px solid #fff0f5;
+}
+
+.StripeElement--webkit-autofill {
+	background: transparent !important;
+}
+
+.StripeElement {
+	width: 100%;
+	padding: 11px 15px 11px 0;
+}
+.stripe-button {
+	display: block;
+	width: 100%;
+	height: auto;
+    margin-top: 25px;
+	background-color: #3ddb38;
+	box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08), inset 0 1px 0 #07ad02;
+	border-radius: 4px;
+	color: #fff;
+	cursor: pointer;
+	transition: all 100ms ease-in-out;
+	will-change: transform, background-color, box-shadow;
+	border: none;
+	padding: 15px;
+}
+
+.stripe-button span{
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	padding-left: 30%;
+}
+.stripe-button:active {
+	background-color: #298d26;
+	box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08), inset 0 1px 0 #177e14;
+	transform: scale(0.99);
+}

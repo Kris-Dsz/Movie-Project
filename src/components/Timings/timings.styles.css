@@ -1,0 +1,57 @@
+
+.timings-body{
+    background-color: black;
+}
+.timings-movie-details {
+    display: inline-flex;
+    padding: 30px;
+}
+.timings-movie-details .timings-image-container {
+    padding: 0px 30px;
+    margin: auto;
+}
+
+.timings-image-container .timings-image{
+    width: 400px;
+    height: 600px;
+}
+.timings-movie-details .timings-content {
+    padding: 0px 30px;
+    position: relative;
+}
+.timings-movie-details .timings-content h2 {
+    font-size: 40px;
+    color: white;
+}
+
+.timings-movie-details .timings-content p {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.timings-movie-details .timings-content span {
+    color: #9e90d1;
+    font-weight: bold;
+}
+
+.timing-item {
+    width: 100%;
+    height: auto;
+    color: white;
+    background-color: #372675;
+    display: inline-flex;
+    align-items:center;
+    justify-content: center;
+    padding: 25px;
+}
+
+.timing-item:hover{
+    background-color: #2a1c5e;
+}
+
+.timing-item .timing-footer .time{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
